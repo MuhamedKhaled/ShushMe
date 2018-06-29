@@ -132,8 +132,8 @@ public class GeofenceBroadcastReceiver extends BroadcastReceiver {
         if(Build.VERSION.SDK_INT < 24 || (Build.VERSION.SDK_INT >= 24 && !notificationManager.isNotificationPolicyAccessGranted()))
         {
 
-//            AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-//            audioManager.setRingerMode(mode);
+            AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+            audioManager.setRingerMode(mode);
             Log.d(TAG, "setRingerMode: Should be silent now");
         }
     }

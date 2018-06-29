@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity
 
     public void onRingerPermissionsClicked(View view) {
         Intent intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
-        startActivity(intent);
+        startActivityForResult(intent,0);
     }
 
     @Override
