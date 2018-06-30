@@ -1,5 +1,5 @@
 # ShushMe
-ShushMe is an app that turns your device silent whenever you enter any of a list of places of your choice using Geofences
+ShushMe is an app that allows you to pick a set of locations using Google's Places API, it then creates geofences around those places and turns your device into silent mode if you enter any of them. Once the device exits again ShushMe turns your device back to normal
 
 ## Screenshots
 
